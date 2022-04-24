@@ -57,12 +57,35 @@ public class Main {
         driver.switchTo().defaultContent();
 
 
-        /////////////Find Elements////////////////
-        driver.findElement(By.xpath(""));
-        driver.findElements(By.xpath(""));
+        /////////////Find Element////////////////
+        WebElement element6 = driver.findElement(By.id(""));
 
 
+        element6.click();
+        element6.sendKeys("ayakkabı");
+        String text = element6.getText();
+        element6.clear();
+        String attribute = element6.getAttribute("class");
+        String css = element6.getCssValue("");
+        int elementx = element6.getLocation().getX();
+        int elementy = element6.getLocation().getY();
+        int elementh = element6.getRect().getHeight();
+        int elementw = element6.getRect().getWidth();
+        element6.getSize();
+        String tagname = element6.getTagName();
+        element6.isDisplayed(); //
+        element6.isSelected(); //
+        element6.isEnabled(); //
+        element6.findElement(By.tagName("svf"));
+        element6.findElements(By.xpath(""));
 
-
+        /////////////Find Elements////////////////  *********
+        List<WebElement> elementList = driver.findElements(By.cssSelector(""));
+        for (WebElement elem : elementList) {
+            if(elem.getText().equals("Markalar")){
+                elem.click();
+                break;
+            }
+        }
     }
 }
