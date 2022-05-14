@@ -1,14 +1,32 @@
-package test;
+package Runner;
 
+import Util.DriverFactory;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.*;
 
-public class testng {
-    WebDriver driver;
+import java.util.concurrent.TimeUnit;
+
+
+@CucumberOptions(
+        features = {"src/main/java/Features"},
+        glue = {"StepDefinitions"},
+        plugin = {
+                "summary", "pretty", "html:Reports/CucumberReport/Reports.html",
+                "json:Reports/CucumberReport/Report",
+        }
+)
+public class runner extends AbstractTestNGCucumberTests {
+    static WebDriver driver;
+
+
+    public static WebDriver getDriver() {
+        return driver;
+    }
 
     @BeforeSuite
     public void beforeSuite() {
@@ -19,22 +37,21 @@ public class testng {
     @BeforeTest()
     public void beforeTest(String browser) {
         System.out.println("before test");
-        if (browser.equals("Chrome")){
+        if (browser.equals("Chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
-
-        }
-        else if (browser.equals("Firefox")){
+        } else if (browser.equals("Firefox")) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
+        } else {
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
         }
-        else {
-            WebDriverManager.iedriver().setup();
-            driver= new InternetExplorerDriver();
-        }
-        driver.get("https://www.google.com/");
+        driver.get("https://www.lcwaikiki.com/");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
-
 
     @BeforeClass
     public void beforeClass() {
@@ -51,25 +68,9 @@ public class testng {
         System.out.println("before group");
     }
 
-    @Test(groups = {"login", "basarili"})
-    public void basariliLogin() {
-        System.out.println("Basarili Login Case i");
-    }
-
-    @Test(groups = {"login", "basarisiz"})
-    public void yanlisEmail() {
-        System.out.println("Yanlis Email Case i");
-    }
-
-    @Test(groups = {"login", "basarisiz"})
-    public void yanlisSifre() {
-        System.out.println("Yanlis sifre Case i");
-    }
-
     @AfterMethod
     public void afterMethod() {
         System.out.println("after method");
-
     }
 
     @AfterClass
@@ -87,7 +88,7 @@ public class testng {
     @AfterSuite
     public void afterSuite() {
         System.out.println("after suite");
-
+        driver.quit();
     }
 
     @AfterGroups
