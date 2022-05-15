@@ -2,9 +2,9 @@
 
 <suite name="LCWaikiki SUITE" verbose="1" >
     <parameter name="browser"  value="Chrome"/>
-    <test name="Cart Page" >
+    <test name="Cart Page">
         <classes>
-            <class name="Runner.runner"/>
+            <class name="testRunners.runner"/>
         </classes>
     </test>
 </suite>

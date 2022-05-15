@@ -1,4 +1,4 @@
-package Pages;
+package pages;
 
 public class ProductPage {
 

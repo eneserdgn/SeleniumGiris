@@ -1,6 +1,6 @@
-Feature: LCWaikiki Cart Page
+Feature: Home Page
 
-  Scenario: Sepete Urun Ekleme
+  Scenario: Home Page Case 1
     Given Uygulama acilir
     When Arama cubuguna "Ayakkabi" yazilir
     When Ara butonuna tiklanir
