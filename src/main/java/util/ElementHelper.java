@@ -82,6 +82,14 @@ public class ElementHelper {
     }
 
     /**
+     * \
+     * @param key
+     */
+    public void checkElementPresence(By key) {
+        wait.until(ExpectedConditions.presenceOfElementLocated(key));
+    }
+
+    /**
      * @param text
      * @return
      */
@@ -115,7 +123,7 @@ public class ElementHelper {
         boolean find = false;
         List<WebElement> elements = findElements(key);
         for (WebElement element : elements) {
-            if (element.getText().equals(text)) {
+            if (element.getText().contains(text)) {
                 element.click();
                 find = true;
                 break;
@@ -132,7 +140,7 @@ public class ElementHelper {
         boolean find = false;
         List<WebElement> elements = findElements(key);
         for (WebElement element : elements) {
-            if (element.getText().equals(text)) {
+            if (element.getText().contains(text)) {
                 find = true;
                 break;
             }

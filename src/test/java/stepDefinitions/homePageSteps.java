@@ -30,4 +30,6 @@ public class homePageSteps {
     public void clickCardCard(String card) {
         homePage.clickCard(card);
     }
+
+
 }

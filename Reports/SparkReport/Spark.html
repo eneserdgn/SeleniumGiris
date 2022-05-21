@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Build 1</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 21, 2022 14:46:29</span></a>
+<a href="#"><span class="badge badge-primary">May 21, 2022 16:56:50</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 21, 2022 14:46:29</h3>
+<h3>May 21, 2022 16:56:50</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 21, 2022 14:46:42</h3>
+<h3>May 21, 2022 16:57:08</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>2</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>4</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>6</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>12</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Home Page":12.638
+"Pages Page":17.819
 };
 </script>
 <div class="row">
@@ -172,24 +172,24 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@HomePage</td>
-<td>3</td>
+<td>@PagesPage</td>
+<td>5</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<td>@Card</td>
-<td>3</td>
+<td>@Links</td>
+<td>5</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<td>@Click</td>
-<td>3</td>
+<td>@Content</td>
+<td>5</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -235,13 +235,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 2,
+passChild: 4,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 6,
+passGrandChild: 12,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -266,7 +266,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@HomePage</a><a class="dropdown-item" href="#">@Card</a><a class="dropdown-item" href="#">@Click</a>
+<a class="dropdown-item" href="#">@PagesPage</a><a class="dropdown-item" href="#">@Links</a><a class="dropdown-item" href="#">@Content</a>
 </ul>
 </li>
 </ul>
@@ -277,9 +277,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Home Page</p>
+            <p class="name">Pages Page</p>
             <p class="text-sm">
-              <span>2:46:29 PM</span> / <span>00:00:12:638</span>
+              <span>4:56:50 PM</span> / <span>00:00:17:819</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -287,10 +287,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Home Page</h5>
-<span class='badge badge-success'>05.21.2022 2:46:29 PM</span>
-<span class='badge badge-danger'>05.21.2022 2:46:42 PM</span>
-<span class='badge badge-default'>00:00:12:638</span>
+<h5 class="test-status text-pass">Pages Page</h5>
+<span class='badge badge-success'>05.21.2022 4:56:50 PM</span>
+<span class='badge badge-danger'>05.21.2022 4:57:08 PM</span>
+<span class='badge badge-default'>00:00:17:819</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -302,29 +302,29 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Click <card> Card</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Check content on Links Page</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Click Elements Card</div>
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Check content on Links Page</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given Enes is home page</span>
+                    <span>Given Enes is at "Elements" under "Links" page</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When click "Elements" card</span>
+                    <span>When click "Created" following links</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then should see "Elements" Page</span>
+                    <span>Then should see "201" response code</span>
       <div>
       </div>
                   </div>
@@ -333,22 +333,70 @@ eventsCount: 5,
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Click Forms Card</div>
+                  <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Check content on Links Page</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given Enes is home page</span>
+                    <span>Given Enes is at "Elements" under "Links" page</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When click "Forms" card</span>
+                    <span>When click "No Content" following links</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then should see "Forms" Page</span>
+                    <span>Then should see "204" response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>Check content on Links Page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Enes is at "Elements" under "Links" page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click "Moved" following links</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then should see "301" response code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>Check content on Links Page</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Enes is at "Elements" under "Links" page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When click "Forbidden" following links</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then should see "403" response code</span>
       <div>
       </div>
                   </div>
@@ -379,15 +427,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>3</span>
+<span class='badge log pass-bg'>5</span>
 </span>
-<p class="name">@HomePage</p>
-<p class="duration text-sm">3 tests</p>
+<p class="name">@PagesPage</p>
+<p class="duration text-sm">5 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@HomePage</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
+<h4>@PagesPage</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -400,31 +448,51 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:29 PM</td>
+<td>16:56:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Click <card> Card</a>
+<a href="#" class="linked" test-id='1' id='2'>Check content on Links Page</a>
 <div class="">
-<span class="badge badge-default">Home Page.Click <card> Card</span>
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:29 PM</td>
+<td>16:56:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>Click Elements Card</a>
+<a href="#" class="linked" test-id='1' id='3'>Check content on Links Page</a>
 <div class="">
-<span class="badge badge-default">Home Page.Click Elements Card</span>
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:36 PM</td>
+<td>16:56:55 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='15'>Click Forms Card</a>
+<a href="#" class="linked" test-id='1' id='15'>Check content on Links Page</a>
 <div class="">
-<span class="badge badge-default">Home Page.Click Forms Card</span>
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:56:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>Check content on Links Page</a>
+<div class="">
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:57:03 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Check content on Links Page</a>
+<div class="">
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
 </div>
 </td>
 </tr>
@@ -435,15 +503,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>3</span>
+<span class='badge log pass-bg'>5</span>
 </span>
-<p class="name">@Card</p>
-<p class="duration text-sm">3 tests</p>
+<p class="name">@Links</p>
+<p class="duration text-sm">5 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Card</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
+<h4>@Links</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -456,31 +524,51 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:29 PM</td>
+<td>16:56:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Click <card> Card</a>
+<a href="#" class="linked" test-id='1' id='2'>Check content on Links Page</a>
 <div class="">
-<span class="badge badge-default">Home Page.Click <card> Card</span>
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:29 PM</td>
+<td>16:56:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>Click Elements Card</a>
+<a href="#" class="linked" test-id='1' id='3'>Check content on Links Page</a>
 <div class="">
-<span class="badge badge-default">Home Page.Click Elements Card</span>
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:36 PM</td>
+<td>16:56:55 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='15'>Click Forms Card</a>
+<a href="#" class="linked" test-id='1' id='15'>Check content on Links Page</a>
 <div class="">
-<span class="badge badge-default">Home Page.Click Forms Card</span>
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:56:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>Check content on Links Page</a>
+<div class="">
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:57:03 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Check content on Links Page</a>
+<div class="">
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
 </div>
 </td>
 </tr>
@@ -491,15 +579,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>3</span>
+<span class='badge log pass-bg'>5</span>
 </span>
-<p class="name">@Click</p>
-<p class="duration text-sm">3 tests</p>
+<p class="name">@Content</p>
+<p class="duration text-sm">5 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Click</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
+<h4>@Content</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -512,31 +600,51 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:29 PM</td>
+<td>16:56:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Click <card> Card</a>
+<a href="#" class="linked" test-id='1' id='2'>Check content on Links Page</a>
 <div class="">
-<span class="badge badge-default">Home Page.Click <card> Card</span>
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:29 PM</td>
+<td>16:56:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>Click Elements Card</a>
+<a href="#" class="linked" test-id='1' id='3'>Check content on Links Page</a>
 <div class="">
-<span class="badge badge-default">Home Page.Click Elements Card</span>
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:46:36 PM</td>
+<td>16:56:55 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='15'>Click Forms Card</a>
+<a href="#" class="linked" test-id='1' id='15'>Check content on Links Page</a>
 <div class="">
-<span class="badge badge-default">Home Page.Click Forms Card</span>
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:56:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>Check content on Links Page</a>
+<div class="">
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:57:03 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='39'>Check content on Links Page</a>
+<div class="">
+<span class="badge badge-default">Pages Page.Check content on Links Page</span>
 </div>
 </td>
 </tr>
