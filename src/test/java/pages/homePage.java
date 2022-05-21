@@ -1,15 +1,10 @@
 package pages;
 
-import io.cucumber.java.an.E;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import util.ElementHelper;
 
-import java.util.List;
 
 public class homePage {
 
@@ -26,6 +21,7 @@ public class homePage {
         this.elementHelper = new ElementHelper(driver);
     }
 
+
     public void checkHomePage() {
         elementHelper.checkElementPresence(banner);
     }
@@ -35,12 +31,12 @@ public class homePage {
     }
 
     public void checkCard(String name) {
-        elementHelper.checkElementWithText(cards,name);
+        elementHelper.checkElementWithText(cards, name);
     }
 
 
-    public void clickCard(String name){
-        elementHelper.clickElementWithText(cards,name);
+    public void clickCard(String name) {
+        elementHelper.clickElementWithText(cards, name);
     }
 
 
