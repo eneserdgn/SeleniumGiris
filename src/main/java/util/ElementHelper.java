@@ -83,7 +83,7 @@ public class ElementHelper {
     }
 
     /**
-     *
+     * \
      * @param key
      */
     public void checkElementPresence(By key) {
