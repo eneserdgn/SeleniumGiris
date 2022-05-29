@@ -1,8 +1,8 @@
 package util;
 
-import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,14 +10,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.util.List;
-import java.util.regex.Pattern;
 
 public class ElementHelper {
-    AppiumDriver driver;
+    WebDriver driver;
     WebDriverWait wait;
     Actions action;
 
-    public ElementHelper(AppiumDriver driver) {
+    public ElementHelper(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, 10);
         this.action = new Actions(driver);
@@ -29,7 +28,7 @@ public class ElementHelper {
      */
     public WebElement findElement(By key) {
         WebElement element = presenceElement(key);
-        //scrollToElement(element);
+        scrollToElement(element);
         return element;
     }
 
@@ -39,7 +38,7 @@ public class ElementHelper {
      */
     public List<WebElement> findElements(By key) {
         List<WebElement> elements = presenceElements(key);
-        //scrollToElement(elements.get(0));
+        scrollToElement(elements.get(0));
         return elements;
     }
 
@@ -72,7 +71,7 @@ public class ElementHelper {
      * @return
      */
     public boolean checkElementText(By key, String text) {
-        return wait.until(ExpectedConditions.textMatches(key, Pattern.compile(text)));
+        return wait.until(ExpectedConditions.textToBe(key, text));
     }
 
     /**
