@@ -1,5 +1,6 @@
 package util;
 
+import io.appium.java_client.AppiumDriver;
 import io.cucumber.java.*;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
@@ -8,7 +9,7 @@ import java.util.Properties;
 
 public class Hooks {
 
-    WebDriver driver;
+    AppiumDriver driver;
     Properties properties;
     @Before
     public void before() {
